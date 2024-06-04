@@ -1,0 +1,321 @@
+body {
+    margin: 1px;
+    font-family: 'Gill Sans', sans-serif;
+    background-color: #525252;
+}
+
+.header {
+    border-bottom: 10px solid #503D42;
+    padding: 10px 16px;
+    background: #84C318;
+    color: #F5FBEF;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+}
+
+.calculator-container {
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+    padding: 20px;
+    height: 100vh;
+}
+
+.column:nth-child(odd) {
+    background: #F5FBEF;
+}
+
+.column:nth-child(even) {
+    background: #92AD94;
+}
+
+.input-container {
+    width: 100%;
+    flex: 1;
+}
+
+.input-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+    padding: 2%;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: #c8c8c8;
+    box-sizing: border-box;
+}
+
+.autocomplete {
+    width: 95%;
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: #e9e9e9 !important;
+}
+
+
+button {
+    background: rgb(95, 125, 255);
+    border-width: 0.5px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+button:hover {
+    color: #000000;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    background-color: #e9e9e9;
+}
+
+.result-container {
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.result-box {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0.5px 0.5px rgb(154, 154, 154);
+    border-radius: 5px;
+}
+
+.top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+.menu-open-button,
+.menu-item {
+    margin-top: 200px;
+}
+
+.menu-open-button,
+.menu_item {
+    background: #cecece;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    position: absolute;
+    text-transform: capitalize;
+    line-height: 80px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    transition: all 180ms;
+}
+
+.menu-open-button{
+    font-size:40px;
+}
+
+.menu-item {
+    background: #b7b7b7;
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px #00000080;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    position: absolute;
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    transform: translate3d(0, 0, 0);
+    transition: all 180ms;
+}
+
+.menu-open {
+    display: none;
+}
+
+.menu {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.menu-item:nth-child(2) {
+    transition-duration: 200ms;
+}
+
+.menu-item:nth-child(3) {
+    transition-duration: 250ms;
+}
+
+.menu-item:nth-child(4) {
+    transition-duration: 300ms;
+}
+
+.menu-open-button {
+    z-index: 2;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 400ms;
+    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    cursor: pointer;
+}
+
+.menu-open:hover+.menu-open-button {
+    transform: scale(120%);
+    background: rgb(221, 221, 221);
+}
+
+
+.menu-open:hover~.menu-item:nth-child(3) {
+    transition-duration: 300ms;
+    transform: translate3d(0, -15px, 0);
+}
+
+.menu-open:hover~.menu-item:nth-child(4) {
+    transition-duration: 400ms;
+    transform: translate3d(calc(15px*sin(120deg)), calc(-15px*cos(120deg)), 0)
+}
+
+.menu-open:hover~.menu-item:nth-child(5) {
+    transition-duration: 500ms;
+    transform: translate3d(calc(15px*sin(240deg)), calc(-15px*cos(240deg)), 0);
+}
+
+.menu-open:checked+.menu-open-button {
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    transform: scale(120%) translate3d(0, 0, 0);
+    font-weight: bold;
+    font-size: 150%;
+    text-shadow: 0px 0.5px #676767;
+    background: #747474;
+}
+
+
+.menu-open:checked .menu-item {
+    transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.menu-open:checked~.menu-item:nth-child(3) {
+    transition-duration: 300ms;
+    transform: scale(1.2, 1.2)translate3d(0, -100px, 0);
+}
+
+.menu-open:checked~.menu-item:nth-child(4) {
+    transition-duration: 300ms;
+    transform: scale(1.2, 1.2) translate3d(calc(100px*sin(120deg)), calc(-100px*cos(120deg)), 0);
+
+}
+
+.menu-open:checked~.menu-item:nth-child(5) {
+    transition-duration: 300ms;
+    transform: scale(1.2, 1.2) translate3d(calc(100px*sin(240deg)), calc(-100px*cos(240deg)), 0);
+
+}
+
+.water {
+    background-color: #427eff80;
+}
+
+.water:hover {
+    color: #00c8ff;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.emissions {
+    background-color: rgba(174, 174, 174, 0.5);
+}
+
+.emissions:hover {
+    color: #838383;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+
+}
+
+.land {
+    background-color: hsla(118, 100%, 34%, 0.5);
+}
+
+.land:hover {
+    color: #00ff1a;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+
+}

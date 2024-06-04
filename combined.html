@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="combined.css">
+  <title>Trying to combine all elements</title>
+</head>
+
+<body>
+
+  <div class="header" id="myHeader">
+    <h2>My Header</h2>
+  </div>
+
+  <div class="container">
+    <div class="column">
+      <h2>Input some food</h2>
+      <div class="calculator-container">
+        <h1>Food Grade Calculator</h1>
+        <form autocomplete="off">
+          <div class="input-row">
+            <div class="input-container">
+              <div class='autocomplete'>
+                <input id="foodinput1" type="text" placeholder="Enter Food">
+              </div>
+            </div>
+            <div class='input-container'>
+              <div class='autocomplete'>
+                <input id="foodinput2" type="number" placeholder="Enter Amount (g or ml)">
+              </div>
+            </div>
+          </div>
+          <button type="button" onclick="getFoodUsage(), f_color('menu-txt', 'menu-button'), f_color('buttonw', 'rbuttw'), f_color('buttone', 'rbutte'), f_color('buttonl', 'rbuttl')">Get Grade</button>
+          <div id="summary"></div>
+          <div class="result-container">
+            <div class="result-box" id="waterusage"></div>
+            <div class="result-box" id="landusage"></div>
+            <div class="result-box" id="cusage"></div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <div class="container">
+        <div clas="'js-box">
+
+          <input type="checkbox" class="menu-open" name="menu-open" id="menu-open" />
+          <label class="menu-open-button" for="menu-open" id="menu-button"><span id="menu-txt"></span></label>
+
+          <a class="menu-item water" id='rbuttw'> <i class="fa fa-tint"></i><br><span id="buttonw"></span> </a>
+          <a class="menu-item emissions" id='rbutte'> <i class="fa fa-plane"></i><br><span id="buttone"></span> </a>
+          <a class="menu-item land" id='rbuttl'> <i class="fa fa-tree"></i><br><span id="buttonl"></span> </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+
+    var foodData;
+    var foodnames;
+    fetch("anothercombined.json")
+      .then(response => response.json())
+      .then(data => {
+        foodData = data;
+        foodlower = {};
+        for (const [key, value] of Object.entries(foodData)) {
+          foodlower[key.toLowerCase()] = value;
+        }
+      });
+    const waterpercentiles = [123.26, 310, 500.99, 1255.1]
+    const landpercentiles = [1.54, 3.03, 5.29, 13.56]
+    const copercentiles = [0.93, 1.68, 3.24, 9.3]
+    const opercentiles = [20, 40, 60, 80]
+
+    // Function to fetch and store JSON data
+    function fetchAndStoreJSON() {
+      // Use the Fetch API to get the JSON data
+      fetch('anothercombined.json')
+        .then(response => response.json()) // Parse the JSON from the response
+        .then(data => {
+          foodData = data; // Store the parsed data in the global variable
+          nametaker(foodData);
+          autocomplete(document.getElementById("foodinput1"), foodnames);
+
+        })
+        .catch(error => {
+          console.error('Error fetching JSON data:', error);
+        });
+    }
+    function nametaker(set) {
+      foodnames = Object.keys(set);
+
+    }
+
+    function autocomplete(inp, arr) {
+      /*the autocomplete function takes two arguments,
+      the text field element and an array of possible autocompleted values:*/
+      var currentFocus;
+      /*execute a function when someone writes in the text field:*/
+      inp.addEventListener("input", function (e) {
+        var a, b, i, val = this.value;
+        /*close any already open lists of autocompleted values*/
+        closeAllLists();
+        if (!val) { return false; }
+        currentFocus = -1;
+        /*create a DIV element that will contain the items (values):*/
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        /*append the DIV element as a child of the autocomplete container:*/
+        this.parentNode.appendChild(a);
+        /*for each item in the array...*/
+        for (i = 0; i < arr.length; i++) {
+          /*check if the item starts with the same letters as the text field value:*/
+          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+            /*create a DIV element for each matching element:*/
+            b = document.createElement("DIV");
+            /*make the matching letters bold:*/
+            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].substr(val.length);
+            /*insert a input field that will hold the current array item's value:*/
+            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+            /*execute a function when someone clicks on the item value (DIV element):*/
+            b.addEventListener("click", function (e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+            });
+            a.appendChild(b);
+          }
+        }
+      });
+      /*execute a function presses a key on the keyboard:*/
+      inp.addEventListener("keydown", function (e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+          /*If the arrow DOWN key is pressed,
+          increase the currentFocus variable:*/
+          currentFocus++;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 38) { //up
+          /*If the arrow UP key is pressed,
+          decrease the currentFocus variable:*/
+          currentFocus--;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 13) {
+          /*If the ENTER key is pressed, prevent the form from being submitted,*/
+          e.preventDefault();
+          if (currentFocus > -1) {
+            /*and simulate a click on the "active" item:*/
+            if (x) x[currentFocus].click();
+          }
+        }
+      });
+      function addActive(x) {
+        /*a function to classify an item as "active":*/
+        if (!x) return false;
+        /*start by removing the "active" class on all items:*/
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = (x.length - 1);
+        /*add class "autocomplete-active":*/
+        x[currentFocus].classList.add("autocomplete-active");
+      }
+      function removeActive(x) {
+        /*a function to remove the "active" class from all autocomplete items:*/
+        for (var i = 0; i < x.length; i++) {
+          x[i].classList.remove("autocomplete-active");
+        }
+      }
+      function closeAllLists(elmnt) {
+        /*close all autocomplete lists in the document,
+        except the one passed as an argument:*/
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+          if (elmnt != x[i] && elmnt != inp) {
+            x[i].parentNode.removeChild(x[i]);
+          }
+        }
+      }
+      /*execute a function when someone clicks in the document:*/
+      document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+      });
+    }
+
+    function getFoodUsage() {
+
+      let userfood = document.getElementById('foodinput1').value;
+      let useramount = document.getElementById('foodinput2').value;
+      let userfoodlower = userfood.toLowerCase();
+
+      if (foodlower.hasOwnProperty(userfoodlower)) {
+        const usage = foodlower[userfoodlower];
+        if (useramount === '') {
+          useramount = 100
+        }
+        else {
+        }
+        const watertrue = usage.water * useramount *0.001;
+        const landtrue = usage.land * useramount*0.001;
+        const ctrue = usage.co2 * useramount*0.001;
+
+        const watershort = watertrue.toFixed(2);
+        const landshort = landtrue.toFixed(2);
+        const cshort = ctrue.toFixed(3);
+
+        document.getElementById('summary').innerHTML = `Making ${useramount}g or ml of ${userfood} requires:`;
+        document.getElementById('waterusage').innerHTML = `${watershort} liters of water`;
+        document.getElementById('landusage').innerHTML = `${landshort} square meters of land`;
+        document.getElementById('cusage').innerHTML = `${cshort} kg of CO2e`;
+
+
+        let waterletter = lettergrade(usage.water, waterpercentiles)
+        let landletter = lettergrade(usage.land, landpercentiles)
+        let cletter = lettergrade(usage.co2, copercentiles)
+
+        var scaledscore = (((usage.water/waterpercentiles[3])+(usage.land/landpercentiles[3])+(usage.co2/copercentiles[3]))/3)*100
+
+        document.getElementById('buttonw').innerHTML= waterletter;
+        document.getElementById('buttonl').innerHTML = landletter;
+        document.getElementById('buttone').innerHTML = cletter;
+        document.getElementById('menu-txt').innerHTML = lettergrade(scaledscore, opercentiles);
+        console.log(scaledscore);
+
+
+
+
+      }
+      else {
+        document.getElementById('summary').innerHTML = `Food item ${userfood} not found.`;
+        document.getElementById('waterusage').innerHTML =document.getElementById('watergrade').innerHTML = document.getElementById('landusage').innerHTML =document.getElementById('landgrade').innerHTML =document.getElementById('cgrade').innerHTML =document.getElementById('cusage').innerHTML ='';
+
+      }
+
+
+    }
+
+    function f_color(thisval, thisbutt) {
+      var valelement = document.getElementById(thisval)
+      var element = document.getElementById(thisbutt);
+      if (valelement.innerHTML === 'A') {
+        element.style.backgroundColor = "#44ce1b";
+      } else if (valelement.innerHTML === 'B') {
+        element.style.backgroundColor = "#bbdb44";
+      } else if (valelement.innerHTML === 'C') {
+        element.style.backgroundColor = "#f7e379";
+      } else if (valelement.innerHTML === 'D') {
+        element.style.backgroundColor = "#f2a134";
+      } else if (valelement.innerHTML === 'E') {
+        element.style.backgroundColor = "#e51f1f";
+      } else {
+        element.style.backgroundColor = "";
+      }
+    }
+
+    function lettergrade(howmuch, percentiles) {
+      if (howmuch <= percentiles[0]) {
+        return 'A';
+      } else if (howmuch <= percentiles[1]) {
+        return 'B';
+      } else if (howmuch <= percentiles[2]) {
+        return 'C';
+      } else if (howmuch <= percentiles[3]) {
+        return 'D';
+      } else {
+        return 'E';
+      }
+    }
+
+
+    fetchAndStoreJSON();
+
+  </script>
+
+</body>
+
+</html>

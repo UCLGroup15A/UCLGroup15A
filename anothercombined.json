@@ -1,0 +1,1057 @@
+{
+    "Ale": {
+        "water": 49.4,
+        "land": 0.81,
+        "co2": "0.49"
+    },
+    "Almond butter": {
+        "water": 6846.47,
+        "land": 7.68,
+        "co2": "0.39"
+    },
+    "Almond milk": {
+        "water": 1246.97,
+        "land": 1.37,
+        "co2": "0.66"
+    },
+    "Almonds": {
+        "water": 6413.31,
+        "land": 8.23,
+        "co2": "0.6"
+    },
+    "Apple juice": {
+        "water": 122.32,
+        "land": 0.66,
+        "co2": "0.46"
+    },
+    "Apple pie": {
+        "water": 396.39,
+        "land": 1.77,
+        "co2": "1.24"
+    },
+    "Apples": {
+        "water": 90.33,
+        "land": 0.67,
+        "co2": "0.51"
+    },
+    "Apricot jam": {
+        "water": 851.05,
+        "land": 1.37,
+        "co2": "1.38"
+    },
+    "Asparagus": {
+        "water": 310.51,
+        "land": 1.4,
+        "co2": "0.93"
+    },
+    "Avocados": {
+        "water": 367.41,
+        "land": 1.25,
+        "co2": "0.92"
+    },
+    "Bacon": {
+        "water": 1649.71,
+        "land": 42.33,
+        "co2": "19.31"
+    },
+    "Bagels": {
+        "water": 291.35,
+        "land": 2.26,
+        "co2": "0.8"
+    },
+    "Baguette": {
+        "water": 345.31,
+        "land": 2.2,
+        "co2": "1"
+    },
+    "Banana loaf": {
+        "water": 444.23,
+        "land": 3.27,
+        "co2": "1.87"
+    },
+    "Bananas": {
+        "water": 52.05,
+        "land": 2.64,
+        "co2": "0.87"
+    },
+    "Beans": {
+        "water": 0.08,
+        "land": 17.07,
+        "co2": "1.37"
+    },
+    "Beef burger": {
+        "water": 3492.08,
+        "land": 135.35,
+        "co2": "53.98"
+    },
+    "Beef curry": {
+        "water": 1800.9,
+        "land": 35.4,
+        "co2": "17.37"
+    },
+    "Beef meatballs": {
+        "water": 2227.99,
+        "land": 215.0,
+        "co2": "70.79"
+    },
+    "Beef mince": {
+        "water": 2493.95,
+        "land": 295.25,
+        "co2": "95.03"
+    },
+    "Beef noodles": {
+        "water": 363.2,
+        "land": 4.08,
+        "co2": "2.29"
+    },
+    "Beef steak": {
+        "water": 1954.35,
+        "land": 427.33,
+        "co2": "129.75"
+    },
+    "Beer": {
+        "water": 122.42,
+        "land": 0.83,
+        "co2": "0.69"
+    },
+    "Beetroot": {
+        "water": 11.21,
+        "land": 4.09,
+        "co2": "2.66"
+    },
+    "Biscuits": {
+        "water": 481.18,
+        "land": 7.88,
+        "co2": "3.99"
+    },
+    "Blue cheese": {
+        "water": 1895.35,
+        "land": 23.89,
+        "co2": "20.11"
+    },
+    "Brazil nuts": {
+        "water": 3270.8,
+        "land": 12.81,
+        "co2": "2.51"
+    },
+    "Bread": {
+        "water": 241.91,
+        "land": 2.24,
+        "co2": "0.88"
+    },
+    "Breakfast cereal": {
+        "water": 502.1,
+        "land": 2.9,
+        "co2": "1.49"
+    },
+    "Brie": {
+        "water": 1765.55,
+        "land": 22.45,
+        "co2": "19.14"
+    },
+    "Broccoli": {
+        "water": 224.9,
+        "land": 1.0,
+        "co2": "0.9"
+    },
+    "Butter": {
+        "water": 271.56,
+        "land": 3.62,
+        "co2": "3.32"
+    },
+    "Cabbage": {
+        "water": 131.31,
+        "land": 0.8,
+        "co2": "0.89"
+    },
+    "Caesar salad": {
+        "water": 305.77,
+        "land": 2.75,
+        "co2": "2.08"
+    },
+    "Camembert": {
+        "water": 1529.72,
+        "land": 19.04,
+        "co2": "16.28"
+    },
+    "Carrot cake": {
+        "water": 516.99,
+        "land": 2.78,
+        "co2": "2.01"
+    },
+    "Carrots": {
+        "water": 14.93,
+        "land": 1.6,
+        "co2": "0.94"
+    },
+    "Cashew nuts": {
+        "water": 3504.34,
+        "land": 11.72,
+        "co2": "2.09"
+    },
+    "Cauliflower": {
+        "water": 136.94,
+        "land": 0.79,
+        "co2": "0.89"
+    },
+    "Cereal bars": {
+        "water": 843.37,
+        "land": 5.56,
+        "co2": "2.85"
+    },
+    "Cheddar cheese": {
+        "water": 1939.91,
+        "land": 24.45,
+        "co2": "20.75"
+    },
+    "Cheesecake": {
+        "water": 460.78,
+        "land": 2.59,
+        "co2": "2.37"
+    },
+    "Cherry tomatoes": {
+        "water": 318.57,
+        "land": 0.93,
+        "co2": "2.27"
+    },
+    "Chia seeds": {
+        "water": 210.9,
+        "land": 3.43,
+        "co2": "1.22"
+    },
+    "Chicken breast": {
+        "water": 563.92,
+        "land": 9.22,
+        "co2": "9.27"
+    },
+    "Chicken burger": {
+        "water": 379.13,
+        "land": 6.05,
+        "co2": "5.43"
+    },
+    "Chicken curry": {
+        "water": 436.19,
+        "land": 3.98,
+        "co2": "3.62"
+    },
+    "Chicken noodles": {
+        "water": 413.23,
+        "land": 3.31,
+        "co2": "2.38"
+    },
+    "Chicken pasta": {
+        "water": 310.0,
+        "land": 3.58,
+        "co2": "2.95"
+    },
+    "Chicken sausages": {
+        "water": 483.11,
+        "land": 8.33,
+        "co2": "8.16"
+    },
+    "Chicken thighs": {
+        "water": 577.23,
+        "land": 9.85,
+        "co2": "9.98"
+    },
+    "Chicken wings": {
+        "water": 631.83,
+        "land": 9.51,
+        "co2": "9.58"
+    },
+    "Chickpeas": {
+        "water": 161.39,
+        "land": 15.57,
+        "co2": "1.34"
+    },
+    "Chilli con carne": {
+        "water": 1255.1,
+        "land": 28.3,
+        "co2": "13.54"
+    },
+    "Chocolate biscuits": {
+        "water": 524.26,
+        "land": 13.57,
+        "co2": "5.08"
+    },
+    "Chocolate cake": {
+        "water": 523.02,
+        "land": 10.33,
+        "co2": "3.95"
+    },
+    "Chocolate cereals": {
+        "water": 899.72,
+        "land": 7.38,
+        "co2": "2.88"
+    },
+    "Chocolate cheesecake": {
+        "water": 483.74,
+        "land": 6.51,
+        "co2": "4.9"
+    },
+    "Chocolate spread": {
+        "water": 1215.29,
+        "land": 9.38,
+        "co2": "5.37"
+    },
+    "Cider": {
+        "water": 242.71,
+        "land": 0.91,
+        "co2": "1.08"
+    },
+    "Coconut milk": {
+        "water": 217.23,
+        "land": 0.55,
+        "co2": "3.32"
+    },
+    "Coconut oil": {
+        "water": 345.99,
+        "land": 0.73,
+        "co2": "0.53"
+    },
+    "Cod": {
+        "water": 3177.81,
+        "land": 5.27,
+        "co2": "10.9"
+    },
+    "Cod fish fingers": {
+        "water": 2659.1,
+        "land": 5.42,
+        "co2": "9.31"
+    },
+    "Cod fishcakes": {
+        "water": 2213.4,
+        "land": 3.81,
+        "co2": "7.82"
+    },
+    "Coffee beans": {
+        "water": 16.21,
+        "land": 19.39,
+        "co2": "16.82"
+    },
+    "Coffee pods": {
+        "water": 199.55,
+        "land": 13.77,
+        "co2": "20.3"
+    },
+    "Cookies": {
+        "water": 765.91,
+        "land": 7.18,
+        "co2": "3.36"
+    },
+    "Cottage cheese": {
+        "water": 2418.44,
+        "land": 29.92,
+        "co2": "25.28"
+    },
+    "Cottage pie": {
+        "water": 1100.15,
+        "land": 24.56,
+        "co2": "11.85"
+    },
+    "Courgettes": {
+        "water": 322.96,
+        "land": 1.27,
+        "co2": "0.85"
+    },
+    "Couscous": {
+        "water": 333.85,
+        "land": 2.95,
+        "co2": "1.16"
+    },
+    "Cow's milk": {
+        "water": 309.77,
+        "land": 4.07,
+        "co2": "3.7"
+    },
+    "Cracker biscuits": {
+        "water": 787.92,
+        "land": 4.46,
+        "co2": "2.45"
+    },
+    "Crisps": {
+        "water": 420.95,
+        "land": 7.53,
+        "co2": "3.03"
+    },
+    "Croissants": {
+        "water": 366.34,
+        "land": 3.67,
+        "co2": "1.68"
+    },
+    "Cucumber": {
+        "water": 318.78,
+        "land": 0.85,
+        "co2": "0.85"
+    },
+    "Dairy-free cheese": {
+        "water": 1416.95,
+        "land": 4.21,
+        "co2": "1.98"
+    },
+    "Dairy-free ice cream": {
+        "water": 407.9,
+        "land": 3.49,
+        "co2": "2.45"
+    },
+    "Dark chocolate": {
+        "water": 301.49,
+        "land": 48.79,
+        "co2": "20.62"
+    },
+    "Doughnuts": {
+        "water": 252.76,
+        "land": 3.04,
+        "co2": "2.2"
+    },
+    "Egg noodles": {
+        "water": 273.12,
+        "land": 3.0,
+        "co2": "1.38"
+    },
+    "Eggs": {
+        "water": 830.03,
+        "land": 6.82,
+        "co2": "4.44"
+    },
+    "Falafels": {
+        "water": 81.75,
+        "land": 6.57,
+        "co2": "1.1"
+    },
+    "Feta cheese": {
+        "water": 1366.76,
+        "land": 17.47,
+        "co2": "14.84"
+    },
+    "Flapjack": {
+        "water": 473.42,
+        "land": 3.99,
+        "co2": "1.95"
+    },
+    "Frozen chips (french fries)": {
+        "water": 49.59,
+        "land": 2.11,
+        "co2": "0.75"
+    },
+    "Frozen jacket potatoes": {
+        "water": 15.16,
+        "land": 1.1,
+        "co2": "0.52"
+    },
+    "Frozen mashed potato": {
+        "water": 45.35,
+        "land": 1.25,
+        "co2": "0.83"
+    },
+    "Frozen onion rings": {
+        "water": 88.0,
+        "land": 2.1,
+        "co2": "0.77"
+    },
+    "Frozen potato wedges": {
+        "water": 34.66,
+        "land": 1.69,
+        "co2": "0.66"
+    },
+    "Frozen roast potatoes": {
+        "water": 100.72,
+        "land": 2.44,
+        "co2": "1.2"
+    },
+    "Frozen sweet potato fries": {
+        "water": 110.32,
+        "land": 1.97,
+        "co2": "0.41"
+    },
+    "Fruit cake": {
+        "water": 551.02,
+        "land": 2.2,
+        "co2": "3.45"
+    },
+    "Fruit smoothies": {
+        "water": 172.43,
+        "land": 1.29,
+        "co2": "1.65"
+    },
+    "Garden peas": {
+        "water": 346.79,
+        "land": 6.61,
+        "co2": "1"
+    },
+    "Goat's cheese": {
+        "water": 1782.23,
+        "land": 22.62,
+        "co2": "19.31"
+    },
+    "Granola": {
+        "water": 499.28,
+        "land": 5.14,
+        "co2": "1.78"
+    },
+    "Grapes": {
+        "water": 46.55,
+        "land": 1.54,
+        "co2": "8.28"
+    },
+    "Haddock risotto": {
+        "water": 1172.1,
+        "land": 3.74,
+        "co2": "4.9"
+    },
+    "Halloumi cheese": {
+        "water": 1534.22,
+        "land": 19.1,
+        "co2": "16.17"
+    },
+    "Ice cream": {
+        "water": 463.34,
+        "land": 5.29,
+        "co2": "3.66"
+    },
+    "Ice lollies": {
+        "water": 653.09,
+        "land": 1.94,
+        "co2": "1.31"
+    },
+    "Instant coffee": {
+        "water": 43.08,
+        "land": 18.37,
+        "co2": "28.78"
+    },
+    "Kale": {
+        "water": 133.35,
+        "land": 0.81,
+        "co2": "0.9"
+    },
+    "Kiwis": {
+        "water": 726.69,
+        "land": 1.07,
+        "co2": "1.61"
+    },
+    "Lamb (leg)": {
+        "water": 88.01,
+        "land": 43.42,
+        "co2": "30.74"
+    },
+    "Lamb Hotpot": {
+        "water": 94.12,
+        "land": 15.96,
+        "co2": "11.23"
+    },
+    "Lamb burgers": {
+        "water": 106.45,
+        "land": 38.1,
+        "co2": "26.93"
+    },
+    "Lamb casserole": {
+        "water": 86.27,
+        "land": 43.66,
+        "co2": "30.88"
+    },
+    "Lamb chops": {
+        "water": 86.27,
+        "land": 43.66,
+        "co2": "30.9"
+    },
+    "Lamb curry": {
+        "water": 151.82,
+        "land": 16.24,
+        "co2": "10.19"
+    },
+    "Lamb moussaka": {
+        "water": 286.82,
+        "land": 9.83,
+        "co2": "7.26"
+    },
+    "Lasagne sheets": {
+        "water": 834.88,
+        "land": 3.55,
+        "co2": "1.96"
+    },
+    "Lemons": {
+        "water": 123.26,
+        "land": 0.61,
+        "co2": "0.47"
+    },
+    "Lentils": {
+        "water": 14.31,
+        "land": 27.47,
+        "co2": "2.54"
+    },
+    "Lettuce": {
+        "water": 294.99,
+        "land": 6.78,
+        "co2": "4.93"
+    },
+    "Limes": {
+        "water": 121.7,
+        "land": 0.63,
+        "co2": "0.46"
+    },
+    "Macaroni cheese": {
+        "water": 1668.21,
+        "land": 20.69,
+        "co2": "16.85"
+    },
+    "Mackerel": {
+        "water": 3961.72,
+        "land": 5.8,
+        "co2": "13.61"
+    },
+    "Marmalade": {
+        "water": 917.87,
+        "land": 1.73,
+        "co2": "1.55"
+    },
+    "Meat pizza": {
+        "water": 883.37,
+        "land": 8.36,
+        "co2": "7.4"
+    },
+    "Meat-free burger": {
+        "water": 211.81,
+        "land": 3.8,
+        "co2": "1.02"
+    },
+    "Meat-free mince": {
+        "water": 107.63,
+        "land": 5.8,
+        "co2": "0.88"
+    },
+    "Meat-free nuggets": {
+        "water": 251.34,
+        "land": 1.96,
+        "co2": "0.86"
+    },
+    "Meat-free sausages": {
+        "water": 173.41,
+        "land": 3.72,
+        "co2": "0.96"
+    },
+    "Melon": {
+        "water": 619.19,
+        "land": 0.99,
+        "co2": "1.06"
+    },
+    "Milk chocolate": {
+        "water": 551.85,
+        "land": 17.27,
+        "co2": "10.8"
+    },
+    "Mixed salad": {
+        "water": 343.09,
+        "land": 1.16,
+        "co2": "0.92"
+    },
+    "Mozzarella cheese": {
+        "water": 1507.35,
+        "land": 19.06,
+        "co2": "16.23"
+    },
+    "Muesli": {
+        "water": 343.18,
+        "land": 3.95,
+        "co2": "2.27"
+    },
+    "Muffins": {
+        "water": 412.93,
+        "land": 3.08,
+        "co2": "2.58"
+    },
+    "Mushrooms": {
+        "water": 1459.08,
+        "land": 2.87,
+        "co2": "2.35"
+    },
+    "Naan": {
+        "water": 282.9,
+        "land": 2.29,
+        "co2": "1.01"
+    },
+    "Nut loaf": {
+        "water": 885.1,
+        "land": 2.0,
+        "co2": "0.72"
+    },
+    "Oat milk": {
+        "water": 14.49,
+        "land": 0.53,
+        "co2": "0.45"
+    },
+    "Olive oil": {
+        "water": 1411.24,
+        "land": 21.71,
+        "co2": "5.18"
+    },
+    "Onions": {
+        "water": 53.86,
+        "land": 0.4,
+        "co2": "0.36"
+    },
+    "Orange juice": {
+        "water": 142.69,
+        "land": 0.71,
+        "co2": "0.49"
+    },
+    "Oranges": {
+        "water": 115.54,
+        "land": 0.67,
+        "co2": "0.47"
+    },
+    "Pain au chocolat": {
+        "water": 307.21,
+        "land": 4.83,
+        "co2": "2.81"
+    },
+    "Pancakes": {
+        "water": 340.56,
+        "land": 2.44,
+        "co2": "1.55"
+    },
+    "Parmesan cheese": {
+        "water": 2253.21,
+        "land": 28.25,
+        "co2": "24.02"
+    },
+    "Parsnips": {
+        "water": 12.65,
+        "land": 1.81,
+        "co2": "0.99"
+    },
+    "Pasta shells": {
+        "water": 333.57,
+        "land": 3.5,
+        "co2": "1.03"
+    },
+    "Peanut butter": {
+        "water": 2618.92,
+        "land": 8.69,
+        "co2": "3.43"
+    },
+    "Peanuts": {
+        "water": 2169.65,
+        "land": 8.31,
+        "co2": "3.15"
+    },
+    "Pears": {
+        "water": 783.35,
+        "land": 1.01,
+        "co2": "0.93"
+    },
+    "Pecan nuts": {
+        "water": 3046.98,
+        "land": 11.73,
+        "co2": "2.52"
+    },
+    "Penne pasta": {
+        "water": 614.16,
+        "land": 3.74,
+        "co2": "1.63"
+    },
+    "Peppers": {
+        "water": 362.93,
+        "land": 1.24,
+        "co2": "0.92"
+    },
+    "Pineapple": {
+        "water": 793.04,
+        "land": 1.02,
+        "co2": "0.93"
+    },
+    "Pitta bread": {
+        "water": 134.4,
+        "land": 1.8,
+        "co2": "0.56"
+    },
+    "Popcorn": {
+        "water": 316.85,
+        "land": 3.18,
+        "co2": "1.81"
+    },
+    "Poppadoms": {
+        "water": 293.58,
+        "land": 4.96,
+        "co2": "1.5"
+    },
+    "Pork chops": {
+        "water": 1642.01,
+        "land": 17.31,
+        "co2": "12.16"
+    },
+    "Pork loin": {
+        "water": 1611.19,
+        "land": 16.46,
+        "co2": "11.98"
+    },
+    "Pork sausage rolls": {
+        "water": 783.43,
+        "land": 7.93,
+        "co2": "6.19"
+    },
+    "Pork sausages": {
+        "water": 1292.22,
+        "land": 13.56,
+        "co2": "9.77"
+    },
+    "Porridge (oatmeal)": {
+        "water": 232.57,
+        "land": 4.99,
+        "co2": "1.56"
+    },
+    "Potato croquettes": {
+        "water": 71.92,
+        "land": 1.41,
+        "co2": "0.77"
+    },
+    "Potatoes": {
+        "water": 80.81,
+        "land": 0.8,
+        "co2": "0.21"
+    },
+    "Prawn crackers": {
+        "water": 815.87,
+        "land": 5.47,
+        "co2": "4.93"
+    },
+    "Prawns": {
+        "water": 3197.15,
+        "land": 1.02,
+        "co2": "20.91"
+    },
+    "Protein bar": {
+        "water": 1423.92,
+        "land": 11.13,
+        "co2": "3.37"
+    },
+    "Protein shake": {
+        "water": 322.9,
+        "land": 5.64,
+        "co2": "1.74"
+    },
+    "Pumpkin seeds": {
+        "water": 212.61,
+        "land": 3.34,
+        "co2": "1.32"
+    },
+    "Quiche": {
+        "water": 455.86,
+        "land": 5.59,
+        "co2": "4.67"
+    },
+    "Quinoa": {
+        "water": 210.35,
+        "land": 3.23,
+        "co2": "1.14"
+    },
+    "Rapeseed oil": {
+        "water": 88.67,
+        "land": 7.21,
+        "co2": "3.29"
+    },
+    "Raspberries": {
+        "water": 45.71,
+        "land": 1.54,
+        "co2": "8.37"
+    },
+    "Raspberry jam": {
+        "water": 786.81,
+        "land": 1.96,
+        "co2": "5.11"
+    },
+    "Rice": {
+        "water": 2114.44,
+        "land": 2.94,
+        "co2": "3.93"
+    },
+    "Rice milk": {
+        "water": 474.15,
+        "land": 0.52,
+        "co2": "1.44"
+    },
+    "Rice noodles": {
+        "water": 1869.56,
+        "land": 2.49,
+        "co2": "3.41"
+    },
+    "Ricotta cheese": {
+        "water": 1549.24,
+        "land": 18.97,
+        "co2": "16.29"
+    },
+    "Salmon": {
+        "water": 1360.68,
+        "land": 4.75,
+        "co2": "10.41"
+    },
+    "Salmon fishcakes": {
+        "water": 1074.93,
+        "land": 3.36,
+        "co2": "6.51"
+    },
+    "Sausage rolls": {
+        "water": 779.44,
+        "land": 7.84,
+        "co2": "5.85"
+    },
+    "Shepherd's pie": {
+        "water": 74.28,
+        "land": 11.05,
+        "co2": "7.74"
+    },
+    "Shortbread biscuits": {
+        "water": 514.05,
+        "land": 3.07,
+        "co2": "2.22"
+    },
+    "Sourdough bread": {
+        "water": 248.65,
+        "land": 2.37,
+        "co2": "0.85"
+    },
+    "Soy desert": {
+        "water": 289.26,
+        "land": 1.98,
+        "co2": "1.09"
+    },
+    "Soy milk": {
+        "water": 50.48,
+        "land": 0.87,
+        "co2": "0.89"
+    },
+    "Soy yoghurt": {
+        "water": 196.37,
+        "land": 1.02,
+        "co2": "0.5"
+    },
+    "Spaghetti": {
+        "water": 500.99,
+        "land": 3.81,
+        "co2": "1.65"
+    },
+    "Spaghetti bolognese": {
+        "water": 844.76,
+        "land": 15.16,
+        "co2": "7.83"
+    },
+    "Spinach": {
+        "water": 269.96,
+        "land": 0.99,
+        "co2": "1.01"
+    },
+    "Sponge cake": {
+        "water": 487.89,
+        "land": 2.4,
+        "co2": "1.88"
+    },
+    "Steak pie": {
+        "water": 727.74,
+        "land": 14.1,
+        "co2": "7.1"
+    },
+    "Strawberries": {
+        "water": 349.2,
+        "land": 3.45,
+        "co2": "3.24"
+    },
+    "Strawberry jam": {
+        "water": 949.7,
+        "land": 2.97,
+        "co2": "2.6"
+    },
+    "Sugar": {
+        "water": 1202.39,
+        "land": 2.15,
+        "co2": "1.85"
+    },
+    "Sunflower oil": {
+        "water": 23.19,
+        "land": 19.46,
+        "co2": "3.66"
+    },
+    "Sunflower seeds": {
+        "water": 14.26,
+        "land": 10.98,
+        "co2": "1.93"
+    },
+    "Sweetcorn": {
+        "water": 157.24,
+        "land": 2.08,
+        "co2": "0.97"
+    },
+    "Tea": {
+        "water": 62.44,
+        "land": 23.66,
+        "co2": "17.62"
+    },
+    "Tofu": {
+        "water": 31.18,
+        "land": 3.03,
+        "co2": "1.02"
+    },
+    "Tomato ketchup": {
+        "water": 494.95,
+        "land": 1.67,
+        "co2": "2.61"
+    },
+    "Tomatoes": {
+        "water": 291.67,
+        "land": 0.89,
+        "co2": "2.27"
+    },
+    "Tortilla wraps": {
+        "water": 231.84,
+        "land": 2.26,
+        "co2": "0.95"
+    },
+    "Tuna": {
+        "water": 3771.4,
+        "land": 5.52,
+        "co2": "13.08"
+    },
+    "Vegan pizza": {
+        "water": 293.89,
+        "land": 2.05,
+        "co2": "1.95"
+    },
+    "Vegetable lasagne": {
+        "water": 382.99,
+        "land": 4.15,
+        "co2": "3.38"
+    },
+    "Vegetarian chilli con carne": {
+        "water": 152.48,
+        "land": 3.47,
+        "co2": "1.43"
+    },
+    "Vegetarian curry": {
+        "water": 374.8,
+        "land": 2.28,
+        "co2": "1.31"
+    },
+    "Vegetarian pizza": {
+        "water": 579.25,
+        "land": 6.52,
+        "co2": "5.23"
+    },
+    "Walnuts": {
+        "water": 3458.07,
+        "land": 11.88,
+        "co2": "2.42"
+    },
+    "Watermelon": {
+        "water": 743.31,
+        "land": 1.01,
+        "co2": "0.97"
+    },
+    "Wine": {
+        "water": 93.54,
+        "land": 4.33,
+        "co2": "1.72"
+    },
+    "Yoghurt": {
+        "water": 311.75,
+        "land": 3.21,
+        "co2": "3.11"
+    }
+}
