@@ -58,7 +58,7 @@
 
     </div>
   </div>
-  <script>
+ <script>
 
     window.onscroll = function () { myFunction() };
 
@@ -212,6 +212,26 @@
       let useramount = document.getElementById('foodinput2').value;
       let userfoodlower = userfood.toLowerCase();
 
+      maxwater = 0
+      maxland = 0
+      maxco = 0
+
+      for (const [key, value] of Object.entries(foodData)) {
+        if (value.water > maxwater) {
+          maxwater = value.water;
+        }
+      }
+      for (const [key, value] of Object.entries(foodData)) {
+        if (value.land > maxland) {
+          maxland = value.land;
+        }
+      }      for (const [key, value] of Object.entries(foodData)) {
+        if (value.co2 > maxco) {
+          maxco = value.co2;
+          console.log(maxco)
+        }
+      }
+
       if (foodlower.hasOwnProperty(userfoodlower)) {
         const usage = foodlower[userfoodlower];
         if (useramount === '') {
@@ -219,9 +239,9 @@
         }
         else {
         }
-        const watertrue = usage.water * useramount *0.001;
-        const landtrue = usage.land * useramount*0.001;
-        const ctrue = usage.co2 * useramount*0.001;
+        const watertrue = usage.water * useramount * 0.001;
+        const landtrue = usage.land * useramount * 0.001;
+        const ctrue = usage.co2 * useramount * 0.001;
 
         const watershort = watertrue.toFixed(2);
         const landshort = landtrue.toFixed(2);
@@ -237,9 +257,13 @@
         let landletter = lettergrade(usage.land, landpercentiles)
         let cletter = lettergrade(usage.co2, copercentiles)
 
-        var scaledscore = (((usage.water/waterpercentiles[3])+(usage.land/landpercentiles[3])+(usage.co2/copercentiles[3]))/3)*100
+        var scaledscore = ((usage.water / maxwater) + (usage.land / maxland) + (usage.co2 / maxco)) / 3 * 100
+        console.log("Current  3", usage.water, usage.land, usage.co2)
+        console.log("Max of each", maxwater, maxland, maxco)
+        console.log("percent co2", usage.co2 / maxco)
+        console.log("scaled", scaledscore)
 
-        document.getElementById('buttonw').innerHTML= waterletter;
+        document.getElementById('buttonw').innerHTML = waterletter;
         document.getElementById('buttonl').innerHTML = landletter;
         document.getElementById('buttone').innerHTML = cletter;
         document.getElementById('menu-txt').innerHTML = lettergrade(scaledscore, opercentiles);
@@ -251,7 +275,7 @@
       }
       else {
         document.getElementById('summary').innerHTML = `Food item ${userfood} not found.`;
-        document.getElementById('waterusage').innerHTML =document.getElementById('watergrade').innerHTML = document.getElementById('landusage').innerHTML =document.getElementById('landgrade').innerHTML =document.getElementById('cgrade').innerHTML =document.getElementById('cusage').innerHTML ='';
+        document.getElementById('waterusage').innerHTML = document.getElementById('watergrade').innerHTML = document.getElementById('landusage').innerHTML = document.getElementById('landgrade').innerHTML = document.getElementById('cgrade').innerHTML = document.getElementById('cusage').innerHTML = '';
 
       }
 
