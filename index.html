@@ -87,7 +87,7 @@
     const waterpercentiles = [123.26, 310, 500.99, 1255.1]
     const landpercentiles = [1.54, 3.03, 5.29, 13.56]
     const copercentiles = [0.93, 1.68, 3.24, 9.3]
-    const opercentiles = [20, 40, 60, 80]
+    const opercentiles = [65.1, 66.1, 67.1, 68.1]
 
     // Function to fetch and store JSON data
     function fetchAndStoreJSON() {
@@ -228,7 +228,6 @@
       }      for (const [key, value] of Object.entries(foodData)) {
         if (value.co2 > maxco) {
           maxco = value.co2;
-          console.log(maxco)
         }
       }
 
@@ -256,21 +255,13 @@
         let waterletter = lettergrade(usage.water, waterpercentiles)
         let landletter = lettergrade(usage.land, landpercentiles)
         let cletter = lettergrade(usage.co2, copercentiles)
-
+        otherscaled = (waterletter.charCodeAt(0)+landletter.charCodeAt(0)+cletter.charCodeAt(0))/3
         var scaledscore = ((usage.water / maxwater) + (usage.land / maxland) + (usage.co2 / maxco)) / 3 * 100
-        console.log("Current  3", usage.water, usage.land, usage.co2)
-        console.log("Max of each", maxwater, maxland, maxco)
-        console.log("percent co2", usage.co2 / maxco)
-        console.log("scaled", scaledscore)
 
         document.getElementById('buttonw').innerHTML = waterletter;
         document.getElementById('buttonl').innerHTML = landletter;
         document.getElementById('buttone').innerHTML = cletter;
-        document.getElementById('menu-txt').innerHTML = lettergrade(scaledscore, opercentiles);
-        console.log(scaledscore);
-
-
-
+        document.getElementById('menu-txt').innerHTML = lettergrade(otherscaled, opercentiles);
 
       }
       else {
